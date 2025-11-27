@@ -7,6 +7,6 @@
     }
   },
   "gopls": {
-    "build.buildFlags": ["-tags=unit,integration"]
+    "build.buildFlags": ["-tags=unit,integration,e2e,contract"]
   }
 }
