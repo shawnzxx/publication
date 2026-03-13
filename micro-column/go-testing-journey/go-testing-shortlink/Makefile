@@ -9,9 +9,10 @@ test-unit:
 	@go test -v -tags=unit ./...
 
 # 只运行慢速的、需要环境的集成测试
+# 强制重新运行：设置为 1 时，每次都会实际执行测试，确保结果是最新的。
 test-integration:
 	@echo "Running integration tests..."
-	@go test -v -tags=integration ./...
+	@go test -v -count=1 -tags=integration ./...
 
 # 运行所有测试
 test-all:

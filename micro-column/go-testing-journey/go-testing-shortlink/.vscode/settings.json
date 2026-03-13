@@ -1,0 +1,12 @@
+{
+  "go.buildTags": "unit,integration",
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "gopls": {
+    "build.buildFlags": ["-tags=unit,integration,e2e,contract"]
+  }
+}
